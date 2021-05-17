@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(15, 212, 41);
+    text-align: center;
+}
+/* board */
+#board {
+    padding-top: 3em;
+}
+/* rows */
+.row {
+    clear: both;
+    margin: 0 auto;
+    width: 310px;
+}
+/* cells */
+.row > div {
+    float: left;
+    height: 100px;
+    width: 100px;
+    font-size: 5em;
+}
+/* lines */
+.top {
+    border-bottom: 5px solid rgb(15, 212, 41);
+}
+
+.bottom {
+    border-top: 5px solid rgb(15, 212, 41);
+}
+
+.left {
+    border-right: 5px solid rgb(15, 212, 41);
+}
+
+.right {
+    border-left: 5px solid rgb(15, 212, 41);
+}
+/* hover pointer */
+.row > div:hover {
+    cursor: pointer;
+}
+/* additional styling */
+h1 {
+    font-size: 5em;
+    margin: 0 auto .25em;
+}
+.display {
+    margin: auto;
+    width: 20em;
+    height: 3em;
+    clear: both;
+    padding: 0.75em;
+    font-size: 2.5em;
+}
+button {
+    background-color: rgb(15, 212, 41);
+    padding: 1em;
+    font-size: 1em;
+    font-family: 'Orbitron', sans-serif;
+}
+button:hover {
+    cursor: pointer;
+}
