@@ -26,15 +26,15 @@ button.addEventListener('click', buttonClicked);
 // Each click on a cell will check the clickCounter and if the cell is empty.  
 // If empty and even, clicks print 'X'.  If empty and odd, clicks print 'O'.
 // After placing the correct symbol, the checkForWin function runs.
-function cellClicked() {
+function cellClicked(e) {
 
-    if (clickCounter % 2 == 0 && event.target.textContent == ``) {
-        event.target.textContent = `X`;
+    if (clickCounter % 2 == 0 && e.target.textContent == ``) {
+        e.target.textContent = `X`;
         clickCounter++;
         display.textContent = `O's Turn.`
     }
-    else if (clickCounter % 2 == 1 && event.target.textContent == ``) {
-        event.target.textContent = `O`;
+    else if (clickCounter % 2 == 1 && e.target.textContent == ``) {
+        e.target.textContent = `O`;
         clickCounter++;
         display.textContent = `X's Turn.`
     }
